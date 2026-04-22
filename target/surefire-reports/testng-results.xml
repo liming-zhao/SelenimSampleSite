@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="31" passed="18" failed="13" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-16T23:28:58 EDT" name="Site Automation Test Suite" finished-at="2026-04-16T23:31:20 EDT" duration-ms="142126">
+    <groups>
+    </groups>
+    <test started-at="2026-04-16T23:28:58 EDT" name="Core Modules and Existing Tests" finished-at="2026-04-16T23:31:20 EDT" duration-ms="142126">
+      <class name="com.siteautomation.tests.MouseAndMenuModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:30:48 EDT" name="setUp" finished-at="2026-04-16T23:30:49 EDT" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:30:49 EDT" name="initPageObject" finished-at="2026-04-16T23:30:49 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc023_hovers()[pri:23, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:30:49 EDT" name="tc023_hovers" description="TC-023 Hovers" finished-at="2026-04-16T23:30:51 EDT" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc023_hovers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:30:51 EDT" name="tearDown" finished-at="2026-04-16T23:30:51 EDT" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:31:05 EDT" name="setUp" finished-at="2026-04-16T23:31:06 EDT" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc026_jqueryUiMenus()[pri:26, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:31:06 EDT" name="tc026_jqueryUiMenus" description="TC-026 JQuery UI Menus" finished-at="2026-04-16T23:31:12 EDT" duration-ms="5592" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id='menu']//div[normalize-space()='Enabled']"}
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35df2e5ecf80d52abdd850aa2351bdf8, findElement {using=xpath, value=//ul[@id='menu']//div[normalize-space()='Enabled']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50914}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35df2e5ecf80d52abdd850aa2351bdf8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id='menu']//div[normalize-space()='Enabled']"}
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35df2e5ecf80d52abdd850aa2351bdf8, findElement {using=xpath, value=//ul[@id='menu']//div[normalize-space()='Enabled']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50914}, goog:processID: 24924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50914/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35df2e5ecf80d52abdd850aa2351bdf8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.siteautomation.pages.MouseAndMenuModulesPage.menuItem(MouseAndMenuModulesPage.java:51)
+at com.siteautomation.pages.MouseAndMenuModulesPage.isMenuItemVisible(MouseAndMenuModulesPage.java:63)
+at com.siteautomation.tests.MouseAndMenuModulesTest.tc026_jqueryUiMenus(MouseAndMenuModulesTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc026_jqueryUiMenus -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:31:06 EDT" name="initPageObject" finished-at="2026-04-16T23:31:06 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.MouseAndMenuModulesTest@41d477ed]" started-at="2026-04-16T23:31:12 EDT" name="tearDown" finished-at="2026-04-16T23:31:12 EDT" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.MouseAndMenuModulesTest -->
+      <class name="com.siteautomation.tests.AuthModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:28:58 EDT" name="setUp" finished-at="2026-04-16T23:29:02 EDT" duration-ms="3762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:02 EDT" name="initPageObject" finished-at="2026-04-16T23:29:02 EDT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc001_basicAuth()[pri:1, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:02 EDT" name="tc001_basicAuth" description="TC-001 Basic Auth" finished-at="2026-04-16T23:29:03 EDT" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_basicAuth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:03 EDT" name="tearDown" finished-at="2026-04-16T23:29:03 EDT" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:12 EDT" name="setUp" finished-at="2026-04-16T23:29:13 EDT" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc006_digestAuth()[pri:6, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:13 EDT" name="tc006_digestAuth" description="TC-006 Digest Auth" finished-at="2026-04-16T23:29:13 EDT" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006_digestAuth -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:13 EDT" name="initPageObject" finished-at="2026-04-16T23:29:13 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:29:13 EDT" name="tearDown" finished-at="2026-04-16T23:29:13 EDT" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:30:34 EDT" name="setUp" finished-at="2026-04-16T23:30:35 EDT" duration-ms="1162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc019_formAuthentication()[pri:19, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:30:35 EDT" name="tc019_formAuthentication" description="TC-019 Form Authentication" finished-at="2026-04-16T23:30:36 EDT" duration-ms="1077" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Expected secure area, current URL: https://the-internet.herokuapp.com/login]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Expected secure area, current URL: https://the-internet.herokuapp.com/login
+at com.siteautomation.pages.HomePage.<init>(HomePage.java:19)
+at com.siteautomation.pages.LoginPage.login(LoginPage.java:54)
+at com.siteautomation.tests.AuthModulesTest.tc019_formAuthentication(AuthModulesTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc019_formAuthentication -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:30:35 EDT" name="initPageObject" finished-at="2026-04-16T23:30:35 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.AuthModulesTest@131774fe]" started-at="2026-04-16T23:30:36 EDT" name="tearDown" finished-at="2026-04-16T23:30:37 EDT" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.AuthModulesTest -->
+      <class name="com.siteautomation.tests.FormInteractionModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:30:46 EDT" name="setUp" finished-at="2026-04-16T23:30:47 EDT" duration-ms="898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc022_horizontalSlider()[pri:22, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:30:47 EDT" name="tc022_horizontalSlider" description="TC-022 Horizontal Slider" finished-at="2026-04-16T23:30:48 EDT" duration-ms="605" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.5] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.5] but found [3]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.siteautomation.tests.FormInteractionModulesTest.tc022_horizontalSlider(FormInteractionModulesTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc022_horizontalSlider -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:30:47 EDT" name="initPageObject" finished-at="2026-04-16T23:30:47 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:30:48 EDT" name="tearDown" finished-at="2026-04-16T23:30:48 EDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:31:02 EDT" name="setUp" finished-at="2026-04-16T23:31:04 EDT" duration-ms="1156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc025_inputs()[pri:25, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:31:04 EDT" name="tc025_inputs" description="TC-025 Inputs" finished-at="2026-04-16T23:31:05 EDT" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc025_inputs -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:31:04 EDT" name="initPageObject" finished-at="2026-04-16T23:31:04 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.FormInteractionModulesTest@78691363]" started-at="2026-04-16T23:31:05 EDT" name="tearDown" finished-at="2026-04-16T23:31:05 EDT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.FormInteractionModulesTest -->
+      <class name="com.siteautomation.tests.DomAndWindowsModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:17 EDT" name="setUp" finished-at="2026-04-16T23:31:18 EDT" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:18 EDT" name="initPageObject" finished-at="2026-04-16T23:31:18 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc030_largeAndDeepDom()[pri:30, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:18 EDT" name="tc030_largeAndDeepDom" description="TC-030 Large &amp; Deep DOM" finished-at="2026-04-16T23:31:18 EDT" duration-ms="534" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.siteautomation.tests.DomAndWindowsModulesTest.tc030_largeAndDeepDom(DomAndWindowsModulesTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc030_largeAndDeepDom -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:18 EDT" name="tearDown" finished-at="2026-04-16T23:31:19 EDT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:19 EDT" name="setUp" finished-at="2026-04-16T23:31:19 EDT" duration-ms="943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:19 EDT" name="initPageObject" finished-at="2026-04-16T23:31:19 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc031_multipleWindows()[pri:31, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:19 EDT" name="tc031_multipleWindows" description="TC-031 Multiple Windows" finished-at="2026-04-16T23:31:20 EDT" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc031_multipleWindows -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DomAndWindowsModulesTest@515c6049]" started-at="2026-04-16T23:31:20 EDT" name="tearDown" finished-at="2026-04-16T23:31:20 EDT" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.DomAndWindowsModulesTest -->
+      <class name="com.siteautomation.tests.JavascriptAlertsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.JavascriptAlertsTest@397fbdb]" started-at="2026-04-16T23:31:12 EDT" name="setUp" finished-at="2026-04-16T23:31:13 EDT" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.JavascriptAlertsTest@397fbdb]" started-at="2026-04-16T23:31:13 EDT" name="initPageObject" finished-at="2026-04-16T23:31:13 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc027_javascriptAlerts()[pri:27, instance:com.siteautomation.tests.JavascriptAlertsTest@397fbdb]" started-at="2026-04-16T23:31:13 EDT" name="tc027_javascriptAlerts" description="TC-027 JavaScript Alerts" finished-at="2026-04-16T23:31:14 EDT" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc027_javascriptAlerts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.JavascriptAlertsTest@397fbdb]" started-at="2026-04-16T23:31:14 EDT" name="tearDown" finished-at="2026-04-16T23:31:14 EDT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.JavascriptAlertsTest -->
+      <class name="com.siteautomation.tests.KeyPressesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.KeyPressesTest@33d512c1]" started-at="2026-04-16T23:31:15 EDT" name="setUp" finished-at="2026-04-16T23:31:16 EDT" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc029_keyPresses()[pri:29, instance:com.siteautomation.tests.KeyPressesTest@33d512c1]" started-at="2026-04-16T23:31:16 EDT" name="tc029_keyPresses" description="TC-029 Key Presses" finished-at="2026-04-16T23:31:17 EDT" duration-ms="554" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28f68a904963cb231f1136d535fc67c1, sendKeysToElement {id=f.FFE48CC7D3DB5A5865BBF15CD6736517.d.011907DEF131CA18B50EF355EB745894.e.4, value=[Ljava.lang.CharSequence;@543adf2a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53571}, goog:processID: 25488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53571/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28f68a904963cb231f1136d535fc67c1)] -> id: target]
+Session ID: 28f68a904963cb231f1136d535fc67c1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28f68a904963cb231f1136d535fc67c1, sendKeysToElement {id=f.FFE48CC7D3DB5A5865BBF15CD6736517.d.011907DEF131CA18B50EF355EB745894.e.4, value=[Ljava.lang.CharSequence;@543adf2a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53571}, goog:processID: 25488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53571/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (28f68a904963cb231f1136d535fc67c1)] -> id: target]
+Session ID: 28f68a904963cb231f1136d535fc67c1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+at com.siteautomation.pages.KeyPressesPage.sendSpecialKeyToTarget(KeyPressesPage.java:23)
+at com.siteautomation.tests.KeyPressesTest.tc029_keyPresses(KeyPressesTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc029_keyPresses -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.KeyPressesTest@33d512c1]" started-at="2026-04-16T23:31:16 EDT" name="initPageObject" finished-at="2026-04-16T23:31:16 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.KeyPressesTest@33d512c1]" started-at="2026-04-16T23:31:17 EDT" name="tearDown" finished-at="2026-04-16T23:31:17 EDT" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.KeyPressesTest -->
+      <class name="com.siteautomation.tests.FramesModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.FramesModulesTest@3590fc5b]" started-at="2026-04-16T23:30:37 EDT" name="setUp" finished-at="2026-04-16T23:30:38 EDT" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.FramesModulesTest@3590fc5b]" started-at="2026-04-16T23:30:38 EDT" name="initPageObject" finished-at="2026-04-16T23:30:38 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc020_frames()[pri:20, instance:com.siteautomation.tests.FramesModulesTest@3590fc5b]" started-at="2026-04-16T23:30:38 EDT" name="tc020_frames" description="TC-020 Frames" finished-at="2026-04-16T23:30:39 EDT" duration-ms="1517" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[invalid element state
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a5d7fdb04ea04c79df33d253871ca12, clearElement {id=f.0C8B30DEB0CC58E49F10534735C44C98.d.5C50C11DCB3F31EC1A53C047368E095A.e.19}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55701}, goog:processID: 9004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55701/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9a5d7fdb04ea04c79df33d253871ca12)] -> id: tinymce]
+Session ID: 9a5d7fdb04ea04c79df33d253871ca12]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=147.0.7727.56)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9a5d7fdb04ea04c79df33d253871ca12, clearElement {id=f.0C8B30DEB0CC58E49F10534735C44C98.d.5C50C11DCB3F31EC1A53C047368E095A.e.19}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55701}, goog:processID: 9004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55701/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9a5d7fdb04ea04c79df33d253871ca12)] -> id: tinymce]
+Session ID: 9a5d7fdb04ea04c79df33d253871ca12
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
+at com.siteautomation.pages.FramesModulesPage.typeInIFrameEditor(FramesModulesPage.java:29)
+at com.siteautomation.tests.FramesModulesTest.tc020_frames(FramesModulesTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc020_frames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.FramesModulesTest@3590fc5b]" started-at="2026-04-16T23:30:39 EDT" name="tearDown" finished-at="2026-04-16T23:30:39 EDT" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.FramesModulesTest -->
+      <class name="com.siteautomation.tests.DynamicModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:20 EDT" name="setUp" finished-at="2026-04-16T23:29:21 EDT" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:21 EDT" name="initPageObject" finished-at="2026-04-16T23:29:21 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc010_dynamicContent()[pri:10, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:21 EDT" name="tc010_dynamicContent" description="TC-010 Dynamic Content" finished-at="2026-04-16T23:29:22 EDT" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc010_dynamicContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:22 EDT" name="tearDown" finished-at="2026-04-16T23:29:22 EDT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:41 EDT" name="setUp" finished-at="2026-04-16T23:29:43 EDT" duration-ms="1321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc012_dynamicLoading()[pri:12, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:43 EDT" name="tc012_dynamicLoading" description="TC-012 Dynamic Loading" finished-at="2026-04-16T23:29:59 EDT" duration-ms="16142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc012_dynamicLoading -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:43 EDT" name="initPageObject" finished-at="2026-04-16T23:29:43 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicModulesTest@34123d65]" started-at="2026-04-16T23:29:59 EDT" name="tearDown" finished-at="2026-04-16T23:29:59 EDT" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.DynamicModulesTest -->
+      <class name="com.siteautomation.tests.DynamicInteractionModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:29:22 EDT" name="setUp" finished-at="2026-04-16T23:29:23 EDT" duration-ms="1014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc011_dynamicControls()[pri:11, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:29:23 EDT" name="tc011_dynamicControls" description="TC-011 Dynamic Controls" finished-at="2026-04-16T23:29:41 EDT" duration-ms="17682" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.siteautomation.tests.DynamicInteractionModulesTest.tc011_dynamicControls(DynamicInteractionModulesTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc011_dynamicControls -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:29:23 EDT" name="initPageObject" finished-at="2026-04-16T23:29:23 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:29:41 EDT" name="tearDown" finished-at="2026-04-16T23:29:41 EDT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:29:59 EDT" name="setUp" finished-at="2026-04-16T23:30:00 EDT" duration-ms="852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc013_entryAd()[pri:13, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:00 EDT" name="tc013_entryAd" description="TC-013 Entry Ad" finished-at="2026-04-16T23:30:11 EDT" duration-ms="11417" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.siteautomation.tests.DynamicInteractionModulesTest.tc013_entryAd(DynamicInteractionModulesTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc013_entryAd -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:00 EDT" name="initPageObject" finished-at="2026-04-16T23:30:00 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:11 EDT" name="tearDown" finished-at="2026-04-16T23:30:12 EDT" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:12 EDT" name="setUp" finished-at="2026-04-16T23:30:13 EDT" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:13 EDT" name="initPageObject" finished-at="2026-04-16T23:30:13 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc014_exitIntent()[pri:14, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:13 EDT" name="tc014_exitIntent" description="TC-014 Exit Intent" finished-at="2026-04-16T23:30:13 EDT" duration-ms="414" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.siteautomation.tests.DynamicInteractionModulesTest.tc014_exitIntent(DynamicInteractionModulesTest.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc014_exitIntent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:13 EDT" name="tearDown" finished-at="2026-04-16T23:30:14 EDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:51 EDT" name="setUp" finished-at="2026-04-16T23:30:52 EDT" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc024_infiniteScroll()[pri:24, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:52 EDT" name="tc024_infiniteScroll" description="TC-024 Infinite Scroll" finished-at="2026-04-16T23:31:02 EDT" duration-ms="10485" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.siteautomation.tests.DynamicInteractionModulesTest.tc024_infiniteScroll(DynamicInteractionModulesTest.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc024_infiniteScroll -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:30:52 EDT" name="initPageObject" finished-at="2026-04-16T23:30:52 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.DynamicInteractionModulesTest@59474f18]" started-at="2026-04-16T23:31:02 EDT" name="tearDown" finished-at="2026-04-16T23:31:02 EDT" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.DynamicInteractionModulesTest -->
+      <class name="com.siteautomation.tests.BrowserApiModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:30:39 EDT" name="setUp" finished-at="2026-04-16T23:30:40 EDT" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc021_geolocation()[pri:21, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:30:40 EDT" name="tc021_geolocation" description="TC-021 Geolocation" finished-at="2026-04-16T23:30:46 EDT" duration-ms="5953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc021_geolocation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:30:46 EDT" name="tearDown" finished-at="2026-04-16T23:30:46 EDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:31:14 EDT" name="setUp" finished-at="2026-04-16T23:31:15 EDT" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc028_javascriptOnloadEventError()[pri:28, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:31:15 EDT" name="tc028_javascriptOnloadEventError" description="TC-028 JavaScript onload Event Error" finished-at="2026-04-16T23:31:15 EDT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc028_javascriptOnloadEventError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.BrowserApiModulesTest@1bb5a082]" started-at="2026-04-16T23:31:15 EDT" name="tearDown" finished-at="2026-04-16T23:31:15 EDT" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.BrowserApiModulesTest -->
+      <class name="com.siteautomation.tests.FileDownloadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.FileDownloadTest@3e694b3f]" started-at="2026-04-16T23:30:14 EDT" name="setUp" finished-at="2026-04-16T23:30:15 EDT" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc015_fileDownload()[pri:15, instance:com.siteautomation.tests.FileDownloadTest@3e694b3f]" started-at="2026-04-16T23:30:15 EDT" name="tc015_fileDownload" description="TC-015 File Download" finished-at="2026-04-16T23:30:17 EDT" duration-ms="2391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc015_fileDownload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.FileDownloadTest@3e694b3f]" started-at="2026-04-16T23:30:17 EDT" name="tearDown" finished-at="2026-04-16T23:30:17 EDT" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.FileDownloadTest -->
+      <class name="com.siteautomation.tests.UtilityModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:17 EDT" name="setUp" finished-at="2026-04-16T23:30:18 EDT" duration-ms="966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:18 EDT" name="initPageObject" finished-at="2026-04-16T23:30:18 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method signature="tc016_fileUpload()[pri:16, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:18 EDT" name="tc016_fileUpload" description="TC-016 File Upload" finished-at="2026-04-16T23:30:19 EDT" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc016_fileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:19 EDT" name="tearDown" finished-at="2026-04-16T23:30:19 EDT" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:19 EDT" name="setUp" finished-at="2026-04-16T23:30:20 EDT" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc017_floatingMenu()[pri:17, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:20 EDT" name="tc017_floatingMenu" description="TC-017 Floating Menu" finished-at="2026-04-16T23:30:21 EDT" duration-ms="1278" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class java.lang.Double cannot be cast to class java.lang.Long (java.lang.Double and java.lang.Long are in module java.base of loader 'bootstrap')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class java.lang.Double cannot be cast to class java.lang.Long (java.lang.Double and java.lang.Long are in module java.base of loader 'bootstrap')
+at com.siteautomation.pages.UtilityModulesPage.getYOffset(UtilityModulesPage.java:60)
+at com.siteautomation.tests.UtilityModulesTest.tc017_floatingMenu(UtilityModulesTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc017_floatingMenu -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:20 EDT" name="initPageObject" finished-at="2026-04-16T23:30:20 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:21 EDT" name="tearDown" finished-at="2026-04-16T23:30:21 EDT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:21 EDT" name="setUp" finished-at="2026-04-16T23:30:22 EDT" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc018_forgotPassword()[pri:18, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:22 EDT" name="tc018_forgotPassword" description="TC-018 Forgot Password" finished-at="2026-04-16T23:30:34 EDT" duration-ms="11571" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "/email_sent". Current url: "https://the-internet.herokuapp.com/forgot_password" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57316}, goog:processID: 12656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57316/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cfd55ed3309479bc4a8dd1c9155df4b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "/email_sent". Current url: "https://the-internet.herokuapp.com/forgot_password" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57316}, goog:processID: 12656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57316/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cfd55ed3309479bc4a8dd1c9155df4b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.siteautomation.pages.UtilityModulesPage.isOnEmailSentPage(UtilityModulesPage.java:79)
+at com.siteautomation.tests.UtilityModulesTest.tc018_forgotPassword(UtilityModulesTest.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc018_forgotPassword -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:22 EDT" name="initPageObject" finished-at="2026-04-16T23:30:22 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.UtilityModulesTest@65fb9ffc]" started-at="2026-04-16T23:30:34 EDT" name="tearDown" finished-at="2026-04-16T23:30:34 EDT" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.UtilityModulesTest -->
+      <class name="com.siteautomation.tests.ElementsModulesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:03 EDT" name="setUp" finished-at="2026-04-16T23:29:04 EDT" duration-ms="1009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc002_brokenImages()[pri:2, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:04 EDT" name="tc002_brokenImages" description="TC-002 Broken Images" finished-at="2026-04-16T23:29:05 EDT" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_brokenImages -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:04 EDT" name="initPageObject" finished-at="2026-04-16T23:29:04 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:05 EDT" name="tearDown" finished-at="2026-04-16T23:29:05 EDT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:05 EDT" name="setUp" finished-at="2026-04-16T23:29:07 EDT" duration-ms="1100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc003_challengingDom()[pri:3, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:07 EDT" name="tc003_challengingDom" description="TC-003 Challenging DOM" finished-at="2026-04-16T23:29:08 EDT" duration-ms="922" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf87445155ed3d173102bdceb7cd701d, clickElement {id=f.7F8D891778FE9E18C51535919846D71C.d.13205D22BEF2A954206A35C899B006C0.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53674}, goog:processID: 23048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53674/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf87445155ed3d173102bdceb7cd701d)] -> css selector: .button]
+Session ID: cf87445155ed3d173102bdceb7cd701d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf87445155ed3d173102bdceb7cd701d, clickElement {id=f.7F8D891778FE9E18C51535919846D71C.d.13205D22BEF2A954206A35C899B006C0.e.6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\linac\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53674}, goog:processID: 23048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53674/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf87445155ed3d173102bdceb7cd701d)] -> css selector: .button]
+Session ID: cf87445155ed3d173102bdceb7cd701d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.siteautomation.pages.ElementsModulesPage.clickAllChallengingDomButtons(ElementsModulesPage.java:64)
+at com.siteautomation.tests.ElementsModulesTest.tc003_challengingDom(ElementsModulesTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_challengingDom -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:07 EDT" name="initPageObject" finished-at="2026-04-16T23:29:07 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:08 EDT" name="tearDown" finished-at="2026-04-16T23:29:08 EDT" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:08 EDT" name="setUp" finished-at="2026-04-16T23:29:09 EDT" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc004_checkboxes()[pri:4, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:09 EDT" name="tc004_checkboxes" description="TC-004 Checkboxes" finished-at="2026-04-16T23:29:10 EDT" duration-ms="1141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_checkboxes -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:09 EDT" name="initPageObject" finished-at="2026-04-16T23:29:09 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:10 EDT" name="tearDown" finished-at="2026-04-16T23:29:10 EDT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:10 EDT" name="setUp" finished-at="2026-04-16T23:29:11 EDT" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc005_contextMenu()[pri:5, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:11 EDT" name="tc005_contextMenu" description="TC-005 Context Menu" finished-at="2026-04-16T23:29:11 EDT" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_contextMenu -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:11 EDT" name="initPageObject" finished-at="2026-04-16T23:29:11 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:11 EDT" name="tearDown" finished-at="2026-04-16T23:29:12 EDT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:13 EDT" name="setUp" finished-at="2026-04-16T23:29:14 EDT" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc007_disappearingElements()[pri:7, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:14 EDT" name="tc007_disappearingElements" description="TC-007 Disappearing Elements" finished-at="2026-04-16T23:29:15 EDT" duration-ms="1279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc007_disappearingElements -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:14 EDT" name="initPageObject" finished-at="2026-04-16T23:29:14 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:15 EDT" name="tearDown" finished-at="2026-04-16T23:29:15 EDT" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:15 EDT" name="setUp" finished-at="2026-04-16T23:29:16 EDT" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc008_dragAndDrop()[pri:8, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:16 EDT" name="tc008_dragAndDrop" description="TC-008 Drag and Drop" finished-at="2026-04-16T23:29:17 EDT" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc008_dragAndDrop -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:16 EDT" name="initPageObject" finished-at="2026-04-16T23:29:16 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:17 EDT" name="tearDown" finished-at="2026-04-16T23:29:17 EDT" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:17 EDT" name="setUp" finished-at="2026-04-16T23:29:18 EDT" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc009_dropdown()[pri:9, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:18 EDT" name="tc009_dropdown" description="TC-009 Dropdown" finished-at="2026-04-16T23:29:20 EDT" duration-ms="1367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc009_dropdown -->
+        <test-method is-config="true" signature="initPageObject()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:18 EDT" name="initPageObject" finished-at="2026-04-16T23:29:18 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObject -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.siteautomation.tests.ElementsModulesTest@4802796d]" started-at="2026-04-16T23:29:20 EDT" name="tearDown" finished-at="2026-04-16T23:29:20 EDT" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.siteautomation.tests.ElementsModulesTest -->
+    </test> <!-- Core Modules and Existing Tests -->
+  </suite> <!-- Site Automation Test Suite -->
+</testng-results>

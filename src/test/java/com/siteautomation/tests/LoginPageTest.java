@@ -3,16 +3,16 @@ package com.siteautomation.tests;
 
 import com.siteautomation.pages.HomePage;
 import com.siteautomation.pages.LoginPage;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 
-class LoginPageTest {
+public class LoginPageTest {
 
 
     WebDriver driver;
@@ -34,7 +34,7 @@ class LoginPageTest {
 
 
     @Test
-    void login() {
+    public void login() {
         LoginPage signInPage = new LoginPage(driver);
         signInPage.navigate();
         HomePage homePage = signInPage.login(username, passwd);
@@ -44,15 +44,15 @@ class LoginPageTest {
     }
 
     @Test
-    void loginBasic() {
+    public void loginBasic() {
         LoginPage signInPage = new LoginPage(driver);
         signInPage.navigate();
         assertNotNull(signInPage);
     }
 
 
-    @BeforeEach
-    void setUp() {
+    @BeforeMethod
+    public void setUp() {
 
         username = "tomsmith";
         passwd = "SuperSecretPassword!";
@@ -60,8 +60,8 @@ class LoginPageTest {
         //passwd = "admin";
     }
 
-    @AfterEach
-    void tearDown() {
+    @AfterMethod
+    public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
