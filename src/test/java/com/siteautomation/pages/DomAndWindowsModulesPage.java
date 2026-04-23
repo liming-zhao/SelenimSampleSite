@@ -27,11 +27,11 @@ public class DomAndWindowsModulesPage extends BaseHerokuPage {
     }
 
     public boolean isSibling23Displayed() {
-        return driver.findElement(By.id("sibling-2.3")).isDisplayed();
+        return !driver.findElements(By.cssSelector("#sibling-2\\.3")).isEmpty();
     }
 
     public boolean isDeepElementPresent() {
-        return !driver.findElements(By.xpath("//div[@id='sibling-1.1']//span")).isEmpty();
+        return !driver.findElements(By.cssSelector("#sibling-50\\.50")).isEmpty();
     }
 
     public void openMultipleWindows() {

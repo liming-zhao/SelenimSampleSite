@@ -90,6 +90,10 @@ public class BaseTest {
      */
     @BeforeMethod
     public void setUp() {
+        // Chrome 147 emits CDP lookup warnings on Selenium 4.18; suppress noise in test logs.
+        java.util.logging.Logger.getLogger("org.openqa.selenium.devtools.CdpVersionFinder").setLevel(Level.SEVERE);
+        java.util.logging.Logger.getLogger("org.openqa.selenium.chromium.ChromiumDriver").setLevel(Level.SEVERE);
+
         // Use WebDriverManager to auto-manage driver binaries
         WebDriverManager.chromedriver().setup();
         

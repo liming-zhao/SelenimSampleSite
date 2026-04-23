@@ -26,7 +26,9 @@ public class FramesModulesPage extends BaseHerokuPage {
         driver.findElement(By.linkText("iFrame")).click();
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id("mce_0_ifr")));
         WebElement editorBody = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tinymce")));
-        editorBody.clear();
+        editorBody.click();
+        editorBody.sendKeys(org.openqa.selenium.Keys.chord(org.openqa.selenium.Keys.CONTROL, "a"));
+        editorBody.sendKeys(org.openqa.selenium.Keys.DELETE);
         editorBody.sendKeys(text);
         String value = editorBody.getText().trim();
         driver.switchTo().defaultContent();

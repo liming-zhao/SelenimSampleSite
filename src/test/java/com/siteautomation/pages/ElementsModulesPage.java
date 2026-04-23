@@ -60,8 +60,10 @@ public class ElementsModulesPage extends BaseHerokuPage {
     }
 
     public void clickAllChallengingDomButtons() {
-        for (WebElement button : driver.findElements(By.cssSelector(".button"))) {
-            button.click();
+        List<WebElement> buttons = driver.findElements(By.cssSelector(".button"));
+        for (int i = 0; i < buttons.size(); i++) {
+            By buttonLocator = By.cssSelector(".button:nth-of-type(" + (i + 1) + ")");
+            wait.until(ExpectedConditions.elementToBeClickable(buttonLocator)).click();
         }
     }
 

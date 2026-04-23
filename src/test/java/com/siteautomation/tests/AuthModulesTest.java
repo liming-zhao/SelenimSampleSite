@@ -33,7 +33,9 @@ public class AuthModulesTest extends BaseTest {
     public void tc019_formAuthentication() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
-        loginPage.login("invaliduser", "wrongpassword");
+        loginPage.enterUsername("invaliduser");
+        loginPage.enterPassword("wrongpassword");
+        loginPage.clickLogin();
         Assert.assertTrue(loginPage.getFlashMessage().contains("Your username is invalid!"));
 
         loginPage.login("tomsmith", "SuperSecretPassword!");

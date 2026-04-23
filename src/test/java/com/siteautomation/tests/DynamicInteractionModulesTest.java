@@ -50,7 +50,7 @@ public class DynamicInteractionModulesTest extends BaseTest {
 
         page.closeEntryAdModal();
         page.waitEntryAdModalInvisible();
-        page.refresh();
+        page.clickEntryAdReopenLink();
         Assert.assertTrue(page.isEntryAdModalVisible());
 
         page.closeEntryAdModal();
@@ -75,10 +75,12 @@ public class DynamicInteractionModulesTest extends BaseTest {
         int initialCount = page.getInfiniteScrollParagraphCount();
 
         page.scrollToBottom();
+        page.waitForInfiniteScrollCountGreaterThan(initialCount);
         int secondCount = page.getInfiniteScrollParagraphCount();
         Assert.assertTrue(secondCount > initialCount);
 
         page.scrollToBottom();
+        page.waitForInfiniteScrollCountGreaterThan(secondCount);
         int thirdCount = page.getInfiniteScrollParagraphCount();
         Assert.assertTrue(thirdCount > secondCount);
     }

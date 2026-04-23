@@ -48,7 +48,7 @@ public class MouseAndMenuModulesPage extends BaseHerokuPage {
     }
 
     public WebElement menuItem(String text) {
-        return driver.findElement(By.xpath("//ul[@id='menu']//div[normalize-space()='" + text + "']"));
+        return driver.findElement(By.xpath("//ul[@id='menu']//*[self::a or self::div][normalize-space()='" + text + "']"));
     }
 
     public void hoverMenuItem(String text) {

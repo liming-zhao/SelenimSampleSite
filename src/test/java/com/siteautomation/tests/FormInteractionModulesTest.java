@@ -22,7 +22,6 @@ public class FormInteractionModulesTest extends BaseTest {
         WebElement slider = page.getSlider();
         Assert.assertEquals(slider.getAttribute("value"), "0");
 
-        slider.click();
         slider.sendKeys(Keys.ARROW_RIGHT);
         Assert.assertEquals(page.getSliderValueLabel(), "0.5");
 

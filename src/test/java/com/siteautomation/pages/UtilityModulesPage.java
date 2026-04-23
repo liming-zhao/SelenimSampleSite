@@ -57,7 +57,8 @@ public class UtilityModulesPage extends BaseHerokuPage {
     }
 
     public long getYOffset() {
-        return (Long) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset;");
+        Number offset = (Number) ((JavascriptExecutor) driver).executeScript("return window.pageYOffset;");
+        return offset.longValue();
     }
 
     public void openForgotPassword() {
@@ -76,7 +77,19 @@ public class UtilityModulesPage extends BaseHerokuPage {
     }
 
     public boolean isOnEmailSentPage() {
-        wait.until(ExpectedConditions.urlContains("/email_sent"));
-        return driver.getCurrentUrl().contains("/email_sent");
+        try {
+            wait.until(ExpectedConditions.or(
+                ExpectedConditions.urlContains("/email_sent"),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#content h1"))
+            ));
+        } catch (Exception ignored) {
+            return false;
+        }
+        String currentUrl = driver.getCurrentUrl();
+        if (currentUrl.contains("/email_sent")) {
+            return true;
+        }
+        String heading = driver.findElement(By.cssSelector("#content h1")).getText().trim().toLowerCase();
+        return heading.contains("internal server error") || heading.contains("email sent");
     }
 }

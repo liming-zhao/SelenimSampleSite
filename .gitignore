@@ -20,6 +20,8 @@ bin/
 /nbbuild/
 /dist/
 /nbdist/
+target/
+target/*
 /.nb-gradle/
 
 ### VS Code ###

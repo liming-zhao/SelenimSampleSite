@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
+import java.time.Duration;
 
 public class DynamicInteractionModulesPage extends BaseHerokuPage {
     public DynamicInteractionModulesPage(WebDriver driver) {
@@ -58,7 +59,7 @@ public class DynamicInteractionModulesPage extends BaseHerokuPage {
 
     public boolean isEntryAdModalVisible() {
         try {
-            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("modal"))).isDisplayed();
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#modal[style*='display: block'], #modal[style*='display:block']"))).isDisplayed();
         } catch (Exception e) {
             return false;
         }
@@ -81,7 +82,7 @@ public class DynamicInteractionModulesPage extends BaseHerokuPage {
     }
 
     public boolean isEntryAdReopenLinkVisible() {
-        return driver.findElement(By.id("restart-ad")).isDisplayed();
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("restart-ad"))).isDisplayed();
     }
 
     public void clickEntryAdReopenLink() {
@@ -97,13 +98,17 @@ public class DynamicInteractionModulesPage extends BaseHerokuPage {
     }
 
     public boolean isExitIntentModalVisible() {
-        return !driver.findElements(By.id("ouibounce-modal")).isEmpty()
-            && driver.findElement(By.id("ouibounce-modal")).isDisplayed();
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ouibounce-modal"))).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public void triggerExitIntentWithJs() {
         ((JavascriptExecutor) driver).executeScript(
-            "document.dispatchEvent(new MouseEvent('mouseout', {relatedTarget: null, clientY: 0}));"
+            "document.documentElement.dispatchEvent(new MouseEvent('mouseleave', {bubbles: true, clientY: 0}));" +
+            "document.dispatchEvent(new MouseEvent('mouseout', {bubbles: true, relatedTarget: null, clientY: 0}));"
         );
     }
 
@@ -124,11 +129,16 @@ public class DynamicInteractionModulesPage extends BaseHerokuPage {
     }
 
     public int getInfiniteScrollParagraphCount() {
-        List<WebElement> allParagraphs = driver.findElements(By.cssSelector(".jscroll-added p"));
+        List<WebElement> allParagraphs = driver.findElements(By.cssSelector(".jscroll-added"));
         return allParagraphs.size();
     }
 
     public void scrollToBottom() {
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
+    public void waitForInfiniteScrollCountGreaterThan(int previousCount) {
+        new org.openqa.selenium.support.ui.WebDriverWait(driver, Duration.ofSeconds(10))
+            .until(d -> getInfiniteScrollParagraphCount() > previousCount);
     }
 }
