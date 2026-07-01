@@ -95,7 +95,7 @@ public class BaseTest {
      * Configure ChromeOptions with download directory preference
      */
     protected ChromeOptions getChromeOptionsWithDownload(String downloadPath) {
-        ChromeOptions options = getChromeOptionsFix();
+        ChromeOptions options = getChromeOptions();
         options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
             put("download.default_directory", downloadPath);
         }});
@@ -106,7 +106,7 @@ public class BaseTest {
      * Configure ChromeOptions with geolocation permission
      */
     protected ChromeOptions getChromeOptionsWithGeolocation() {
-        ChromeOptions options = getChromeOptionsFix();
+        ChromeOptions options = getChromeOptions();
         options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
             put("profile.default_content_setting_values.geolocation", 1);
         }});
@@ -127,7 +127,7 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         
         // Initialize WebDriver with configured ChromeOptions
-        driver = new ChromeDriver(getChromeOptionsFix());
+        driver = new ChromeDriver(getChromeOptions());
         
         // Set implicit wait to 5 seconds per PRD
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_SECONDS));
