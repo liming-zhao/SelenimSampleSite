@@ -80,7 +80,7 @@ public class BaseTest {
     
     // ADD THESE FOR CI STABILITY
     options.addArguments("--disable-gpu");
-    options.addArguments("--single-process");
+    //options.addArguments("--single-process");
     
     // Configure logging preferences for browser console logs
     LoggingPreferences loggingPreferences = new LoggingPreferences();
