@@ -63,31 +63,40 @@ public class BaseTest {
     }
 
     public ChromeOptions getChromeOptions(){
-       ChromeOptions options = new ChromeOptions();
+     
     
-    // Disable browser notifications
-    options.addArguments("--disable-notifications");
-    
-    // Start maximized
-    options.addArguments("--start-maximized");
-    
-    // Disable info bars
-    options.addArguments("--disable-infobars");
-    
-    // Additional stability options
-    options.addArguments("--no-sandbox");
-    options.addArguments("--disable-dev-shm-usage");
-    
-    // ADD THESE FOR CI STABILITY
-    options.addArguments("--disable-gpu");
-    //options.addArguments("--single-process");
-    
-    // Configure logging preferences for browser console logs
-    LoggingPreferences loggingPreferences = new LoggingPreferences();
-    loggingPreferences.enable(org.openqa.selenium.logging.LogType.BROWSER, Level.ALL);
-    options.setCapability("goog:loggingPrefs", loggingPreferences);
-    
-    return options;
+    ChromeOptions options = new ChromeOptions();
+options.addArguments(
+    "--headless=new",           // New headless mode (more stable)
+    "--disable-notifications",
+    "--start-maximized",
+    "--disable-infobars",
+    "--no-sandbox",
+    "--disable-dev-shm-usage",  // Don't use /dev/shm for temp files
+    "--disable-gpu",
+    "--disable-extensions",
+    "--disable-software-rasterizer",
+    "--disable-plugins",
+    "--disable-background-networking",
+    "--disable-background-timer-throttling",
+    "--disable-backgrounding-occluded-windows",
+    "--disable-breakpad",
+    "--disable-client-side-phishing-detection",
+    "--disable-component-extensions-with-background-pages",
+    "--disable-default-apps",
+    "--disable-popup-blocking",
+    "--disable-sync",
+    "--metrics-recording-only",
+    "--safebrowsing-disable-auto-update",
+    "--enable-automation",
+    "--disable-web-resources"
+);
+
+// Set additional preferences
+Map<String, Object> prefs = new HashMap<>();
+prefs.put("profile.default_content_settings.popups", 0);
+options.setExperimentalOption("prefs", prefs);
+        return options;
 
     }
 
