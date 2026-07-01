@@ -38,7 +38,7 @@ public class BaseTest {
     /**
      * Configure ChromeOptions per PRD section 2.1
      */
-    protected ChromeOptions getChromeOptions() {
+    protected ChromeOptions getChromeOptionsOld() {
         ChromeOptions options = new ChromeOptions();
         
         // Disable browser notifications
@@ -62,20 +62,32 @@ public class BaseTest {
         return options;
     }
 
-    public ChromeOptions getChromeOptionsFix(){
-        // Remove or modify aggressive Chrome options
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-notifications");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--disable-dev-shm-usage");  // Keep this for CI
-        options.addArguments("--no-sandbox");              // Keep this for CI
-        // ADD THIS - Disable GPU to prevent crashes in headless CI:
-        options.addArguments("--disable-gpu");
-        // ADD THIS - Improve stability:
-        options.addArguments("--single-process");  // OR use: --no-first-run
-        return options;
-        //driver = new ChromeDriver(options);
+    public ChromeOptions getChromeOptions(){
+       ChromeOptions options = new ChromeOptions();
+    
+    // Disable browser notifications
+    options.addArguments("--disable-notifications");
+    
+    // Start maximized
+    options.addArguments("--start-maximized");
+    
+    // Disable info bars
+    options.addArguments("--disable-infobars");
+    
+    // Additional stability options
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    
+    // ADD THESE FOR CI STABILITY
+    options.addArguments("--disable-gpu");
+    options.addArguments("--single-process");
+    
+    // Configure logging preferences for browser console logs
+    LoggingPreferences loggingPreferences = new LoggingPreferences();
+    loggingPreferences.enable(org.openqa.selenium.logging.LogType.BROWSER, Level.ALL);
+    options.setCapability("goog:loggingPrefs", loggingPreferences);
+    
+    return options;
 
     }
 
