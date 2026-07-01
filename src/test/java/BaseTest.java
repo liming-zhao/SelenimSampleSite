@@ -62,11 +62,28 @@ public class BaseTest {
         return options;
     }
 
+    public ChromeOptions getChromeOptionsFix(){
+        // Remove or modify aggressive Chrome options
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-dev-shm-usage");  // Keep this for CI
+        options.addArguments("--no-sandbox");              // Keep this for CI
+        // ADD THIS - Disable GPU to prevent crashes in headless CI:
+        options.addArguments("--disable-gpu");
+        // ADD THIS - Improve stability:
+        options.addArguments("--single-process");  // OR use: --no-first-run
+        return options;
+        //driver = new ChromeDriver(options);
+
+    }
+
     /**
      * Configure ChromeOptions with download directory preference
      */
     protected ChromeOptions getChromeOptionsWithDownload(String downloadPath) {
-        ChromeOptions options = getChromeOptions();
+        ChromeOptions options = getChromeOptionsFix();
         options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
             put("download.default_directory", downloadPath);
         }});
@@ -77,7 +94,7 @@ public class BaseTest {
      * Configure ChromeOptions with geolocation permission
      */
     protected ChromeOptions getChromeOptionsWithGeolocation() {
-        ChromeOptions options = getChromeOptions();
+        ChromeOptions options = getChromeOptionsFix();
         options.setExperimentalOption("prefs", new java.util.HashMap<String, Object>() {{
             put("profile.default_content_setting_values.geolocation", 1);
         }});
@@ -98,7 +115,7 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         
         // Initialize WebDriver with configured ChromeOptions
-        driver = new ChromeDriver(getChromeOptions());
+        driver = new ChromeDriver(getChromeOptionsFix());
         
         // Set implicit wait to 5 seconds per PRD
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_SECONDS));
