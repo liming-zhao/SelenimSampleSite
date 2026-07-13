@@ -1,6 +1,6 @@
 # Site Automation Test Framework
 
-Test Automation Framework for [the-internet.herokuapp.com](https://the-internet.herokuapp.com) using Java + Selenium WebDriver.
+Test Automation Framework for [the-internet.herokuapp.com](https://the-internet.herokuapp.com) using Java + Selenium WebDriver. Buit using Claud + OpenAI + Cursor
 
 ## Technology Stack
 
